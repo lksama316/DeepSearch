@@ -1,0 +1,112 @@
+Java 语言介绍
+============================================
+
+一、Java 是什么
+--------------------------------------------
+Java 是一种面向对象的高级编程语言，由 Sun Microsystems 公司的 James Gosling 等人
+于 1995 年正式发布（最初名为 Oak）。Java 采用"编写一次，到处运行"（Write Once,
+Run Anywhere，缩写 WORA）的理念，凭借跨平台能力成为全球使用最广泛的编程语言之一。
+2010 年，Oracle（甲骨文）公司收购了 Sun Microsystems，成为 Java 的官方维护者。
+
+Java 目前由社区驱动的 Java Community Process（JCP）组织制定规范，并以 OpenJDK
+作为标准开源实现。Oracle 大约每两年发布一次长期支持（LTS）版本，如 Java 8、11、
+17、21 等。
+
+二、Java 的主要特点
+--------------------------------------------
+1. 跨平台性（平台无关性）
+   Java 源代码被编译为字节码（.class 文件），运行在 Java 虚拟机（JVM）上。
+   只要目标平台安装了对应的 JVM，同一份字节码即可运行，无需重新编译。
+
+2. 面向对象
+   Java 是纯粹的面向对象语言，核心概念包括类（class）、对象（object）、
+   封装（encapsulation）、继承（inheritance）、多态（polymorphism）与抽象
+   （abstraction）。
+
+3. 自动内存管理
+   Java 提供垃圾回收机制（Garbage Collection, GC），自动回收不再使用的对象
+   内存，程序员无需手动管理内存，降低了内存泄漏和指针错误的风险。
+
+4. 安全性
+   Java 最初为网络环境设计，内置安全管理器、字节码校验等机制，
+   可限制代码的权限，防止恶意代码破坏系统。
+
+5. 健壮性
+   Java 强调编译期检查与运行时异常处理（try-catch / throws），并提供强类型
+   机制，减少了程序运行时的错误。
+
+6. 多线程支持
+   Java 内建多线程编程支持（java.lang.Thread、并发包 java.util.concurrent），
+   便于开发高并发应用。
+
+7. 丰富的标准库与生态
+   Java 拥有庞大的标准类库（JDK）和第三方生态（如 Spring、Hibernate、Maven、
+   Gradle 等），覆盖网络、IO、数据库、图形界面、安全、分布式等各领域。
+
+三、Java 的组成部分（JDK / JRE / JVM）
+--------------------------------------------
+1. JDK（Java Development Kit）
+   Java 开发工具包，包含编译器（javac）、调试工具、文档工具等，
+   供开发者编写和编译 Java 程序使用。
+
+2. JRE（Java Runtime Environment）
+   Java 运行时环境，包含 JVM 与运行所需的类库，供普通用户运行 Java 程序使用。
+   （JDK 中包含了 JRE。）
+
+3. JVM（Java Virtual Machine）
+   Java 虚拟机，负责执行字节码，是 Java 实现跨平台的核心。
+
+四、基本语法示例
+--------------------------------------------
+   示例：经典的 Hello World 程序
+
+   public class HelloWorld {
+       public static void main(String[] args) {
+           System.out.println("Hello, Java!");
+       }
+   }
+
+   说明：
+   - public class HelloWorld：声明一个公开类，文件名须与类名一致（HelloWorld.java）。
+   - public static void main(String[] args)：程序的入口方法。
+   - System.out.println(...)：向控制台输出一行文字。
+
+五、应用领域
+--------------------------------------------
+1. 企业级应用开发
+   使用 Java EE（Jakarta EE）/ Spring 技术栈构建大型企业系统（ERP、CRM、金融
+   系统等）。
+
+2. Android 移动应用
+   Android 系统大量使用 Java 语言进行应用开发。
+
+3. 大数据处理
+   Hadoop、Spark、Flink 等主流大数据框架均由 Java 编写或运行于 JVM 之上。
+
+4. 后端服务与微服务
+   结合 Spring Boot、Spring Cloud 构建高性能的后端 API 与微服务架构。
+
+5. 桌面应用
+   通过 Swing、JavaFX 等技术开发跨平台桌面程序。
+
+6. 嵌入式与物联网
+   如 Java ME、面向嵌入式设备的 Java 平台等。
+
+六、发展历史简表
+--------------------------------------------
+- 1991 年：项目启动，最初名为 Oak。
+- 1995 年：Java 1.0 正式发布，提出"编写一次，到处运行"。
+- 1998 年：Java 2（J2SE/J2EE/J2ME）发布。
+- 2004 年：Java 5 引入泛型、注解、自动装箱等重大特性。
+- 2006 年：Java 6 发布，Sun 宣布将 Java 开源（OpenJDK）。
+- 2010 年：Oracle 收购 Sun，接管 Java。
+- 2014 年：Java 8 发布，引入 Lambda 表达式与 Stream API（重要里程碑）。
+- 2017 年：Java 9 起改为每半年一个版本，并引入模块化系统（Project Jigsaw）。
+- 2021 年：Java 17 作为 LTS 发布。
+- 2023 年：Java 21 作为 LTS 发布，引入虚拟线程等特性。
+
+七、总结
+--------------------------------------------
+Java 凭借其跨平台、面向对象、生态丰富和稳定性高等优势，二十多年来始终位居
+主流编程语言前列。无论是初学者入门还是企业级开发，Java 都是一门极具学习价值
+和就业前景的编程语言。
